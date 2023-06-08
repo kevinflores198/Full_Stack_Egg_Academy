@@ -1,0 +1,2 @@
+herenciasej4extras.entidades.profesor
+HerenciasEj4Segundo.entidades.profesor

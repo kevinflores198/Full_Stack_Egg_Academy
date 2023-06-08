@@ -1,0 +1,2 @@
+herenciasej4extras.entidades.personalServicio
+HerenciasEj4Segundo.entidades.personalServicio
