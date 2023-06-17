@@ -6,19 +6,20 @@ import Cards from './Cards';
 export default class Main extends Component {
 
     constructor(props) {
-        // El padrr de main es component y con super lo llamamos, 
-        // component nos lo provee react. Necesitamos ver el pasaje 
-        // de informacion con los props que son las propiedades que 
+        // El padrr de main es component y con super lo llamamos,
+        // component nos lo provee react. Necesitamos ver el pasaje
+        // de informacion con los props que son las propiedades que
         // recibe el main component
         super(props)
-        console.log("Hola desde el constructor");
+
+        //Se le pone un estado inicial, en este caso es un array vacio. initial state
+        this.state = { mascotas: [] };
     }
 
     componentDidMount() {
-        console.log("Holis desde componentDidMount");
+
     }
     render() {
-        console.log("Hola desde el render");
         return (
             <main>
                 <section className="py-5 text-center container">
@@ -33,7 +34,7 @@ export default class Main extends Component {
                         </div>
                     </div>
                 </section>
-
+                {/* //de esta manera le estoy pasando a cards las mascotas que necesita */}
                 <Cards />
             </main>
 

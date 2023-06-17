@@ -10,7 +10,7 @@ export const API_RM = {
     },
 
     //personaje por id
-    CHARACTER_BY_ID : function () {
+    CHARACTER_BY_ID : function (id) {
         return `${this.URL}/character/${id}`
     }
 }
