@@ -1,19 +1,27 @@
-import React, { useState } from 'react'
-import { useUserForm } from './hooks/Custom.hooks'
+import React, { useEffect, useState } from 'react'
+import { useUserForm } from '../../hooks/Custom.hooks'
 
 const UserForm = () => {
 
   const { form, setForm, handleChanges } = useUserForm();
-  const { areEquals, setAreEquals } = useState();
-  const { passwordConfirmation, setPasswordConfirmation } = useState();
-  const handlePasswordConfirmation = () => {
 
+  const [areEquals, setAreEquals] = useState(true);
+  const [passwordConfirmation, setPasswordConfirmation] = useState();
+
+
+  const handlePasswordConfirmation = (e) => {
+    setPasswordConfirmation(e.target.value);
   }
+
+  useEffect(() => {
+    const { password } = form;
+    setAreEquals(password === passwordConfirmation);
+  }, [passwordConfirmation])
+
   const handleSubmit = (e) => {
-
     e.preventDefault() //nos proteje de que no refresque la pagina
+    // UserService.save(form);
     console.log(form);
-
   }
 
   return (
@@ -22,51 +30,48 @@ const UserForm = () => {
 
         <h2>Registro</h2>
 
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="email"
-            id="disabledTextInput"
-            class="form-control"
+            id="disabledTextInput1"
+            className="form-control"
             placeholder="Email"
             name='email'
             onChange={handleChanges}
           />
         </div>
 
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="password"
-            id="disabledTextInput"
-            class="form-control"
+            id="disabledTextInput2"
+            className="form-control"
             placeholder="contrasña"
             name='password'
             onChange={handleChanges}
           />
         </div>
 
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="text"
-            id="disabledTextInput"
-            class="form-control"
+            id="disabledTextInput3"
+            className="form-control"
             placeholder="Repetir contraseña"
             onChange={handlePasswordConfirmation}
           />
         </div>
 
-        <div class="mb-3">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck"
-            />
-            <label class="form-check-label" for="disabledFieldsetCheck">
-              Recodrarme
-            </label>
+        {!areEquals && (
+          <div className='form-text list-group-item-danger'>
+            Las claves no son iguales
           </div>
-        </div>
+        )}
 
         <button
+        disabled={!areEquals} //desabilita el boton hasta que las contraseñas sean iguales
           type="submit"
-          class="btn btn-primary"
+          className="btn btn-primary"
           onClick={handleSubmit}
         >
           Registrarme

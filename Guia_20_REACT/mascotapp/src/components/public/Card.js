@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ mascota }) => {
     return (
+
         <div className="col">
             <div className="card shadow-sm">
                 {/* //debemos usar el scr con la mascota y la imagen para traer la imagen a la carta y mostrarlas */}
@@ -25,6 +26,7 @@ const Card = ({ mascota }) => {
                 </div>
             </div>
         </div>
+
     )
 }
 
