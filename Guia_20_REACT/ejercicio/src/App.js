@@ -11,7 +11,7 @@ import UserForm from './components/public/UserForm';
 
 function App() {
   return (
-    <div classNameName="App">
+    <div className="App">
 
       <NavBar />
 

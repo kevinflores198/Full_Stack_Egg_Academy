@@ -3,7 +3,9 @@ import React from 'react'
 export const SecondMain = () => {
 
     return (
-        <h1>Hola soy el main 2</h1>
+        <div className='main2'>
+            <h1>Hola soy el main 2</h1>
+        </div>
     )
 }
 

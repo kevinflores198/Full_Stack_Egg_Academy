@@ -69,7 +69,7 @@ const UserForm = () => {
         )}
 
         <button
-        disabled={!areEquals} //desabilita el boton hasta que las contraseñas sean iguales
+          disabled={!areEquals} //desabilita el boton hasta que las contraseñas sean iguales
           type="submit"
           className="btn btn-primary"
           onClick={handleSubmit}

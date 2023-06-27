@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 
 export const Footer = () => {
+
+    //       +++ hook +++
+    //         funci
+    //         para cambiar
+    //    var  la var
+    const [click, setClick] = useState(0);
+
+    const year = new Date().getFullYear();
+
+
+    const handleClicks = () => {
+        setClick(click + 1);
+    }
+
     return (
 
         <div className="container">
             <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div className="col mb-3">
-                    <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <a onClick={handleClicks} className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                         <img src="pac-man.png" className="App-logo" width="30" href="#bootstrap"></img>
-                        <a className="text-body-secondary" >&copy; 2023</a>
+                        <a className="text-body-secondary" >&copy; {year} {click}</a>
 
                     </a>
                 </div>
