@@ -11,7 +11,7 @@ const Cards = () => {
     useEffect(() => {
 
         servicio.obtenerTodo()
-            .then((data) => setMascota(data.results.splice(0,10)))
+            .then((data) => setMascota(data.results.splice(0,9)))
             .catch((error) => console.log(error))
     }, [mascota])
 

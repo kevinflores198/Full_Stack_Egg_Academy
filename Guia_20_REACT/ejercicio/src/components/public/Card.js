@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const Card = ({ mascota }) => {
 
+    //hacemos el hook como boolean para que cambie cuando hacemos el if en el boton
     const [meGusta, setMeGusta] = useState(false);
 
     const handleClicks = () => {
@@ -17,7 +18,6 @@ const Card = ({ mascota }) => {
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
                             <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
                         </div>
                         <button onClick={handleClicks} type="button" className={meGusta ? "btn btn-sm btn-danger" : "btn btn-sm btn-primary"}>Me gusta </button>
                     </div>

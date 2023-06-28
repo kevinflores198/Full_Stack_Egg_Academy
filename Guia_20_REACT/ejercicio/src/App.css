@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #212020;
 }
 
@@ -37,66 +37,67 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.form{
+.form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form-interno{
+.form-interno {
   width: 900px;
-  
+
 }
 
-.form-floating{
+.form-floating {
   margin-bottom: 20px;
 }
 
-.h32{
+.h32 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.imagen{
+.imagen {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main2{
+.main2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
-.album{
+.album {
   background-color: #212020;
 }
 
-h5{
+h5 {
   color: aliceblue;
 }
 
-h1{
+h1 {
   color: white;
-  
+
 }
 
-.fs-4{
-  color: white;
-}
-.text{
+.fs-4 {
   color: white;
 }
 
-.form-check-label{
+.text {
   color: white;
+}
 
+.form-check-label {
+  color: white;
 }
