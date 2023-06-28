@@ -18,7 +18,7 @@ export default class Main extends Component {
             <main>
                 <Carousel />
 
-                <Container />
+                {/* <Container /> */}
 
                 <Cards/>
             </main>

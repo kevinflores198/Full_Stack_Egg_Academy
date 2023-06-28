@@ -1,3 +1,7 @@
+body{
+  background-color: #212020;
+}
+
 .App {
   text-align: center;
 }
@@ -69,5 +73,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
+.album{
+  background-color: #212020;
+}
+
+h5{
+  color: aliceblue;
+}
+
+h1{
+  color: white;
+  
+}
+
+.fs-4{
+  color: white;
+}
+.text{
+  color: white;
+}
+
+.form-check-label{
+  color: white;
+
+}

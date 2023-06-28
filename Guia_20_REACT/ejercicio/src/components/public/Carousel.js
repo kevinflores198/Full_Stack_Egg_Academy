@@ -14,32 +14,32 @@ const Carousel = () => {
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-                    <div className="container">
-                        <div className="carousel-caption text-start">
-                            <h1>Example headline.</h1>
-                            <p className="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a className="btn btn-lg btn-primary" href="#"><Link to={"/user-form"} className="nav-link">Sign up today</Link></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-                    <div className="container">
-                        <div className="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+                    <img src='3.png' className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
                     <div className="container">
                         <div className="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            <h1>Make an account.</h1>
+                            <p className="opacity-75">You'll get the whole info about our page! Don't let it go!</p>
+                            <p><a className="btn btn-lg btn-primary" href="#"><Link to={"/user-form"} className="nav-link">Sign up today!</Link></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src='2.png' className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    <div className="container">
+                        <div className="carousel-caption text-end">
+                            <h1>Do you really know them?</h1>
+                            <p>Visit our website!</p>
+                            <p><a className="btn btn-lg btn-primary" href="https://es.wikipedia.org/wiki/Rick_y_Morty">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img src='1.png' className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+                    <div className="container">
+                        <div className="carousel-caption text-end">
+                            <h1>Let's take a look at!</h1>
+                            <p>Our streaming platform partner can show our seasons and episodes</p>
+                            <p><a  className="btn btn-lg btn-primary" href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ">watch now!</a></p>
                         </div>
                     </div>
                 </div>

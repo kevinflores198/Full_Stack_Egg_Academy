@@ -1,13 +1,13 @@
 import React from 'react'
 
-const UserForm = () => {
+const UserLogin = () => {
     return (
 
         <main className="form">
 
             <form className='form-interno'>
                 <a className='imagen'><img src="rick.png" className="App-logo" width="30" ></img></a>
-                <h1 className="h32 mb-3 fw-normal">Sign in</h1>
+                <h1 className="h32 mb-3 fw-normal">Log in</h1>
 
                 <div className="form-floating">
                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
@@ -16,10 +16,6 @@ const UserForm = () => {
                 <div className="form-floating">
                     <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
                     <label for="floatingPassword">Password</label>
-                </div>
-                <div className="form-floating">
-                    <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-                    <label for="floatingPassword">Repeat password</label>
                 </div>
 
                 <div className="form-check text-start my-3">
@@ -35,4 +31,4 @@ const UserForm = () => {
     )
 }
 
-export default UserForm
+export default UserLogin
