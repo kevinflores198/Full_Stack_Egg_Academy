@@ -6,7 +6,7 @@ const UserForm = () => {
         <main className="form">
 
             <form className='form-interno'>
-                <a className='imagen'><img src="rick.png" className="App-logo" width="30" ></img></a>
+                <a className='imagen'><img src="morty.png" className="App-logo" width="30" ></img></a>
                 <h1 className="h32 mb-3 fw-normal">Sign in</h1>
 
                 <div className="form-floating">
@@ -28,7 +28,9 @@ const UserForm = () => {
                         Remember me
                     </label>
                 </div>
-                <button className="btn btn-primary w-100 py-2" type="submit">Sign up</button>
+                <div className='boton'>
+                    <button className="btn btn-primary w-100 py-2" type="submit">Sign up</button>
+                </div>
             </form>
 
         </main>

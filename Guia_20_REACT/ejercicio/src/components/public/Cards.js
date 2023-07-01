@@ -6,16 +6,16 @@ import servicio from '../../services/servicio';
 
 const Cards = () => {
 
-    const [mascota, setMascota] = useState([])
+    const [personaje, setPersonaje] = useState([])
 
     useEffect(() => {
 
         servicio.obtenerTodo()
-            .then((data) => setMascota(data.results.splice(0,9)))
+            .then((data) => setPersonaje(data.results.splice(0,9)))
             .catch((error) => console.log(error))
-    }, [mascota])
+    }, [personaje])
 
-    const cardList = mascota.map((m) => <Card mascota={m} key={m.id} />)
+    const cardList = personaje.map((m) => <Card personaje={m} key={m.id} />)
 
     return (
 

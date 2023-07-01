@@ -47,11 +47,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .form-interno {
   width: 900px;
-
 }
 
 .form-floating {
@@ -100,4 +100,29 @@ h1 {
 
 .form-check-label {
   color: white;
+}
+
+.p-4 {
+  border-radius: 6px;
+  margin: auto;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.lead {
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.display-4{
+  color: rgb(3, 3, 3);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 20px;
 }

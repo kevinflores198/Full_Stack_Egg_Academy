@@ -7,6 +7,7 @@ import { Footer } from './components/public/Footer';
 import { Routes, Route } from "react-router-dom";
 import UserForm from './components/public/UserForm';
 import UserLogin from './components/public/UserLogin';
+import Detail from './components/public/Detail';
 
 
 
@@ -21,6 +22,8 @@ function App() {
         <Route exact path={"/main2"} element={<SecondMain />} />
         <Route path={"/user-login"} element={<UserLogin />} />
         <Route path={"/user-form"} element={<UserForm />} />
+        <Route path={"/detail/:id"} element={<Detail />} />
+
       </Routes>
 
       <Footer />
