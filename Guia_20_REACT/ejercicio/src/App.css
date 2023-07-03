@@ -119,10 +119,17 @@ h1 {
   align-items: center;
 }
 
-.display-4{
+.display-4 {
   color: rgb(3, 3, 3);
   display: flex;
   justify-content: left;
   align-items: center;
   margin-left: 20px;
+}
+
+.form-text {
+  color: red;
+  border-radius: 5px;
+  width: 200px;
+
 }
